@@ -1,8 +1,8 @@
 %define module	Rose-DateTime
 %define	modprefix Rose
 
-%define realversion	0.53
-%define version		0.53
+%define realversion	0.532
+%define version		0.53.02
 
 %define	rel	1
 %define release	%mkrel %{rel}
