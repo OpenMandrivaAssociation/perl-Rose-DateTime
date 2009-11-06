@@ -1,28 +1,28 @@
-%define module	Rose-DateTime
-%define	modprefix Rose
-%define up_version  0.532
-%define version     %perl_convert_version %{up_version}
-%define release	%mkrel 1
+%define upstream_name	 Rose-DateTime
+%define upstream_version 0.533
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	DateTime helper functions and objects
-Name:		perl-%{module}
-Version:	%{version}
-Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Rose/%{module}-%{up_version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Rose/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl(DateTime)
 BuildRequires:	perl(Rose::Object)
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The Rose::DateTime::* modules provide a few convenience functions and
 objects for use with DateTime dates.
 
 %prep
-%setup -q -n %{module}-%{up_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,5 +42,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc Changes
 %{_mandir}/man*/*
-%{perl_vendorlib}/%{modprefix}
-
+%{perl_vendorlib}/Rose
