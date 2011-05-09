@@ -1,5 +1,5 @@
 %define upstream_name	 Rose-DateTime
-%define upstream_version 0.535
+%define upstream_version 0.537
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
