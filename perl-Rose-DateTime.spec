@@ -1,15 +1,15 @@
 %define upstream_name	 Rose-DateTime
-%define upstream_version 0.538
+%define upstream_version 0.539
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.538
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	DateTime helper functions and objects
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Rose/Rose-DateTime-0.538.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Rose/Rose-DateTime-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DateTime)
@@ -78,5 +78,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri May 19 2006 Scott Karns <scottk@mandriva.org> 0.52.2-1mdk
 - Initial MDV release
+
 
 
