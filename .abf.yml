@@ -1,5 +1,6 @@
 removed_sources:
   Rose-DateTime-0.537.tar.gz: a425b765feed81316ec8b26185158876eee611fc
   Rose-DateTime-0.538.tar.gz: 80c8b93035cb563dc8617e08aa331f9bc207b297
-sources:
   Rose-DateTime-0.539.tar.gz: c9db0fb28ced5123176d4c898785058f5f588524
+sources:
+  Rose-DateTime-0.540.tar.gz: 706d217b9526999cd906c31df732f90ed632b466

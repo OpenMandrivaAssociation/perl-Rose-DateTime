@@ -1,5 +1,5 @@
 %define upstream_name	 Rose-DateTime
-%define upstream_version 0.539
+%define upstream_version 0.540
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -78,6 +78,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri May 19 2006 Scott Karns <scottk@mandriva.org> 0.52.2-1mdk
 - Initial MDV release
+
 
 
 
