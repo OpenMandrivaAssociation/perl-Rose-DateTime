@@ -2,14 +2,14 @@
 %define upstream_version 0.540
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	DateTime helper functions and objects
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Rose/Rose-DateTime-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Rose-DateTime
+Source0:	https://cpan.metacpan.org/authors/id/J/JS/JSIRACUSA/Rose-DateTime-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
